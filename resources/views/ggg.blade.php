@@ -7,12 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Purple Admin</title>
     <!-- plugins:css -->
-    <link rel="stylesheet" href="{{ asset('assets/vendors/mdi/css/materialdesignicons.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/vendors/css/vendor.bundle.base.css') }}">
-
-    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+    <link rel="stylesheet" href="../../assets/vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="../../assets/vendors/css/vendor.bundle.base.css">
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <!-- endinject -->
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="../../assets/css/style.css">
     <!-- End layout styles -->
-    <link rel="shortcut icon" href="{{ asset('assets/images/favicon.ico') }}" />
+    <link rel="shortcut icon" href="../../assets/images/favicon.ico" />
 </head>
 
 <body>
@@ -23,7 +28,7 @@
                     <div class="col-lg-4 mx-auto">
                         <div class="auth-form-light text-left p-5">
                             <div class="brand-logo">
-                                <img src="{{ asset('assets/images/logo.svg') }}">
+                                <img src="../../assets/images/logo.svg">
                             </div>
                             <h4>Hello! let's get started</h4>
                             <h6 class="font-weight-light">Sign in to continue.</h6>
@@ -32,7 +37,7 @@
                                 <div class="form-group">
                                     <input type="email" id="exampleInputEmail1"
                                         class="form-control form-control-lg @error('email') is-invalid @enderror"
-                                        name="email" value="{{ old('email') }}" required autocomplete="email" autofocus placeholder="Username">
+                                        name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
                                         @error('email')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
@@ -41,7 +46,7 @@
                                 </div>
                                 <div class="form-group">
                                     <input type="password" class="form-control form-control-lg @error('password') is-invalid @enderror"
-                                        id="exampleInputPassword1" name="password" required autocomplete="current-password" placeholder="Password">
+                                        id="exampleInputPassword1" name="password" required autocomplete="current-password">
                                         @error('password')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -69,10 +74,8 @@
                                     <button type="button" class="btn btn-block btn-facebook auth-form-btn">
                                         <i class="mdi mdi-facebook mr-2"></i>Connect using facebook </button>
                                 </div>
-                                <div class="text-center mt-4 font-weight-light"> Don't have an account? 
-                                    @if (Route::has('register'))
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Create') }}</a>
-                                     @endif
+                                <div class="text-center mt-4 font-weight-light"> Don't have an account? <a
+                                        href="register.html" class="text-primary">Create</a>
                                 </div>
                             </form>
                         </div>
@@ -85,14 +88,14 @@
     </div>
     <!-- container-scroller -->
     <!-- plugins:js -->
-    <script src="{{ asset('assets/vendors/js/vendor.bundle.base.js') }}"></script>
+    <script src="../../assets/vendors/js/vendor.bundle.base.js"></script>
     <!-- endinject -->
     <!-- Plugin js for this page -->
     <!-- End plugin js for this page -->
     <!-- inject:js -->
-    <script src="{{ asset('assets/js/off-canvas.js') }}"></script>
-    <script src="{{ asset('assets/js/hoverable-collapse.js') }}"></script>
-    <script src="{{ asset('assets/js/misc.js') }}"></script>
+    <script src="../../assets/js/off-canvas.js"></script>
+    <script src="../../assets/js/hoverable-collapse.js"></script>
+    <script src="../../assets/js/misc.js"></script>
     <!-- endinject -->
 </body>
 
