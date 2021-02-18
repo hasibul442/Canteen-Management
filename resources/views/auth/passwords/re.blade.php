@@ -12,19 +12,13 @@
                     
                     <h4>Hello! let's get started</h4>
                     <h6 class="font-weight-light">Sign in to continue.</h6> --}}
-
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-                        <form class="pt-3" method="POST" aaction="{{ route('password.email') }}">
+                        <form class="pt-3" method="POST" action="{{ route('password.update') }}">
                             @csrf
-                            
+                            <input type="hidden" name="token" value="{{ $token }}">
                             <div class="form-group">
                                 <input type="email" id="email"
                                     class="form-control form-control-lg @error('email') is-invalid @enderror" name="email"
-                                    value="{{old('email') }}" required autocomplete="email" autofocus
+                                    value="{{ $email ?? old('email') }}" required autocomplete="email" autofocus
                                     placeholder="Email">
                                 @error('email')
                                     <span class="invalid-feedback" role="alert">
@@ -32,10 +26,30 @@
                                     </span>
                                 @enderror
                             </div>
+                            <div class="form-group">
+                                <input type="password"
+                                    class="form-control form-control-lg @error('password') is-invalid @enderror"
+                                    id="password" name="password" required autocomplete="new-password"
+                                    placeholder="Password">
+                                @error('password')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+
+                            <div class="form-group">
+                                <input type="password" class="form-control form-control-lg" id="password-confirm"
+                                    name="password_confirmation" required autocomplete="new-password"
+                                    placeholder="Confirm Password">
+
+                            </div>
+
+
                             <div class="mt-3 mb-3">
                                 <button type="submit"
                                     class="btn btn-block btn-gradient-primary btn-lg font-weight-medium auth-form-btn">
-                                    {{ __('Send Password Reset Link') }}
+                                    {{ __('Reset Password') }}
                                 </button>
                             </div>
 

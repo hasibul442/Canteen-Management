@@ -18,80 +18,116 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="index.html">
-                <span class="menu-title">Dashboard</span>
+              <a class="nav-link" href="#">
+                <span class="menu-title">Home</span>
                 <i class="mdi mdi-home menu-icon"></i>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
-                <span class="menu-title">Basic UI Elements</span>
-                <i class="menu-arrow"></i>
-                <i class="mdi mdi-crosshairs-gps menu-icon"></i>
+              <a class="nav-link" href="#">
+                <span class="menu-title">Dashboard</span>
+                <i class="mdi mdi-buffer menu-icon"></i>
               </a>
-              <div class="collapse" id="ui-basic">
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="collapse" href="#setting" aria-expanded="false" aria-controls="ui-basic">
+                <span class="menu-title">Setting</span>
+                <i class="menu-arrow"></i>
+                <i class="mdi mdi-settings menu-icon"></i>
+              </a>
+              <div class="collapse" id="setting">
                 <ul class="nav flex-column sub-menu">
-                  <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">Buttons</a></li>
-                  <li class="nav-item"> <a class="nav-link" href="pages/ui-features/typography.html">Typography</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="#">Foods Cetagory</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="#">Employee Cetagory</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="#">Employee Cetagory</a></li>
                 </ul>
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="pages/icons/mdi.html">
-                <span class="menu-title">Icons</span>
-                <i class="mdi mdi-contacts menu-icon"></i>
+              <a class="nav-link" data-toggle="collapse" href="#employee" aria-expanded="false" aria-controls="ui-basic">
+                <span class="menu-title">Employee</span>
+                <i class="menu-arrow"></i>
+                <i class="mdi mdi-account-multiple menu-icon"></i>
               </a>
+              <div class="collapse" id="employee">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item"> <a class="nav-link" href="#">Registration</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="#">List</a></li>
+                </ul>
+              </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="pages/forms/basic_elements.html">
-                <span class="menu-title">Forms</span>
-                <i class="mdi mdi-format-list-bulleted menu-icon"></i>
+              <a class="nav-link" data-toggle="collapse" href="#product" aria-expanded="false" aria-controls="ui-basic">
+                <span class="menu-title">Product</span>
+                <i class="menu-arrow"></i>
+                <i class="mdi mdi-food-fork-drink menu-icon"></i>
               </a>
+              <div class="collapse" id="product">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item"> <a class="nav-link" href="#">Registration</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="#">List</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="collapse" href="#vendor" aria-expanded="false" aria-controls="ui-basic">
+                <span class="menu-title">Vendor</span>
+                <i class="menu-arrow"></i>
+                <i class="mdi mdi-ticket-account menu-icon"></i>
+              </a>
+              <div class="collapse" id="vendor">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item"> <a class="nav-link" href="#">Registration</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="#">List</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="collapse" href="#daily_shopping" aria-expanded="false" aria-controls="ui-basic">
+                <span class="menu-title">Daily Shopping</span>
+                <i class="menu-arrow"></i>
+                <i class="mdi mdi-ticket-account menu-icon"></i>
+              </a>
+              <div class="collapse" id="daily_shopping">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item"> <a class="nav-link" href="#">Add Daily Bill</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="#">All List</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="collapse" href="#order" aria-expanded="false" aria-controls="ui-basic">
+                <span class="menu-title">Order</span>
+                <i class="menu-arrow"></i>
+                <i class="mdi mdi-ticket-account menu-icon"></i>
+              </a>
+              <div class="collapse" id="order">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item"> <a class="nav-link" href="#">Create Order</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="#">Check List</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="collapse" href="#food" aria-expanded="false" aria-controls="ui-basic">
+                <span class="menu-title">Food Menu</span>
+                <i class="menu-arrow"></i>
+                <i class="mdi mdi-ticket-account menu-icon"></i>
+              </a>
+              <div class="collapse" id="food">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item"> <a class="nav-link" href="#">Add item</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="#">Item List</a></li>
+                </ul>
+              </div>
+            </li>
+            
             </li>
             <li class="nav-item">
               <a class="nav-link" href="pages/charts/chartjs.html">
                 <span class="menu-title">Charts</span>
                 <i class="mdi mdi-chart-bar menu-icon"></i>
               </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="pages/tables/basic-table.html">
-                <span class="menu-title">Tables</span>
-                <i class="mdi mdi-table-large menu-icon"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" data-toggle="collapse" href="#general-pages" aria-expanded="false" aria-controls="general-pages">
-                <span class="menu-title">Sample Pages</span>
-                <i class="menu-arrow"></i>
-                <i class="mdi mdi-medical-bag menu-icon"></i>
-              </a>
-              <div class="collapse" id="general-pages">
-                <ul class="nav flex-column sub-menu">
-                  <li class="nav-item"> <a class="nav-link" href="pages/samples/blank-page.html"> Blank Page </a></li>
-                  <li class="nav-item"> <a class="nav-link" href="pages/samples/login.html"> Login </a></li>
-                  <li class="nav-item"> <a class="nav-link" href="pages/samples/register.html"> Register </a></li>
-                  <li class="nav-item"> <a class="nav-link" href="pages/samples/error-404.html"> 404 </a></li>
-                  <li class="nav-item"> <a class="nav-link" href="pages/samples/error-500.html"> 500 </a></li>
-                </ul>
-              </div>
-            </li>
-            <li class="nav-item sidebar-actions">
-              <span class="nav-link">
-                <div class="border-bottom">
-                  <h6 class="font-weight-normal mb-3">Projects</h6>
-                </div>
-                <button class="btn btn-block btn-lg btn-gradient-primary mt-4">+ Add a project</button>
-                <div class="mt-4">
-                  <div class="border-bottom">
-                    <p class="text-secondary">Categories</p>
-                  </div>
-                  <ul class="gradient-bullet-list mt-4">
-                    <li>Free</li>
-                    <li>Pro</li>
-                  </ul>
-                </div>
-              </span>
             </li>
           </ul>
         </nav>
