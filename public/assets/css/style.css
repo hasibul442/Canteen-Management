@@ -1879,7 +1879,7 @@ a {
   color: #007bff;
   text-decoration: none;
   background-color: transparent; }
-  a:hover {
+a:hover {
     color: #0056b3;
     text-decoration: underline; }
 
@@ -12415,7 +12415,7 @@ code {
       background: initial; }
     .dropdown .dropdown-menu .dropdown-item:hover {
       background-color: #f8f9fa;
-      color: #ffffff; }
+      color: hsl(189, 100%, 50%); }
 
 /* Forms */
 .form-group {

@@ -15,10 +15,19 @@
 //   return view('welcome');
 //});
 
-Auth::routes();
+//Auth::routes();
 
+//Route::get('/', 'HomeController@index')->name('home');
+
+//Auth::routes();
+
+//Route::get('/home', 'HomeController@index')->name('home');
+
+
+Auth::routes(['register' => True]);
 Route::get('/', 'HomeController@index')->name('home');
+Route::get('home', 'HomeController@index')->name('home');
+Route::get('dashboard', 'HomeController@index')->name('home');
 
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
+Route::resource('foodcat', 'FoodCategoryController');
+Route::get('foodcat','FoodCategoryController@index')->name('foodcat.index');

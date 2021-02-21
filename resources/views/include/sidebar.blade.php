@@ -31,7 +31,7 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" data-toggle="collapse" href="#setting" aria-expanded="false" aria-controls="ui-basic">
-                <span class="menu-title">Setting</span>
+                <span class="menu-title">Cetagories</span>
                 <i class="menu-arrow"></i>
                 <i class="mdi mdi-settings menu-icon"></i>
               </a>
@@ -70,12 +70,12 @@
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" data-toggle="collapse" href="#vendor" aria-expanded="false" aria-controls="ui-basic">
-                <span class="menu-title">Vendor</span>
+              <a class="nav-link" data-toggle="collapse" href="#supplier" aria-expanded="false" aria-controls="ui-basic">
+                <span class="menu-title">Supplier</span>
                 <i class="menu-arrow"></i>
-                <i class="mdi mdi-ticket-account menu-icon"></i>
+                <i class="mdi mdi-chemical-weapon menu-icon"></i>
               </a>
-              <div class="collapse" id="vendor">
+              <div class="collapse" id="supplier">
                 <ul class="nav flex-column sub-menu">
                   <li class="nav-item"> <a class="nav-link" href="#">Registration</a></li>
                   <li class="nav-item"> <a class="nav-link" href="#">List</a></li>
@@ -86,7 +86,7 @@
               <a class="nav-link" data-toggle="collapse" href="#daily_shopping" aria-expanded="false" aria-controls="ui-basic">
                 <span class="menu-title">Daily Shopping</span>
                 <i class="menu-arrow"></i>
-                <i class="mdi mdi-ticket-account menu-icon"></i>
+                <i class="mdi mdi-cart menu-icon"></i>
               </a>
               <div class="collapse" id="daily_shopping">
                 <ul class="nav flex-column sub-menu">
@@ -99,7 +99,7 @@
               <a class="nav-link" data-toggle="collapse" href="#order" aria-expanded="false" aria-controls="ui-basic">
                 <span class="menu-title">Order</span>
                 <i class="menu-arrow"></i>
-                <i class="mdi mdi-ticket-account menu-icon"></i>
+                <i class="mdi mdi-cards menu-icon"></i>
               </a>
               <div class="collapse" id="order">
                 <ul class="nav flex-column sub-menu">
@@ -112,7 +112,7 @@
               <a class="nav-link" data-toggle="collapse" href="#food" aria-expanded="false" aria-controls="ui-basic">
                 <span class="menu-title">Food Menu</span>
                 <i class="menu-arrow"></i>
-                <i class="mdi mdi-ticket-account menu-icon"></i>
+                <i class="mdi mdi-food menu-icon"></i>
               </a>
               <div class="collapse" id="food">
                 <ul class="nav flex-column sub-menu">
@@ -128,6 +128,13 @@
                 <span class="menu-title">Charts</span>
                 <i class="mdi mdi-chart-bar menu-icon"></i>
               </a>
+            </li>
+
+            <li class="nav-item">
+
+              <button type="submit" class="btn btn-block btn-gradient-primary btn-lg font-weight-medium auth-form-btn">
+                            <i class="mdi mdi-logout"></i> {{ __('Log Out') }}
+              </button>
             </li>
           </ul>
         </nav>
